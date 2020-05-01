@@ -1,14 +1,8 @@
-import React, {useContext} from 'react';
-import  './header.css';
-import ThemeContext from './themes-context';
+import React from "react";
+import "./header.css";
 
 const Header = () => {
-    const theme= useContext(ThemeContext)
-    return(
-        <div style={theme}>
-            <p>{JSON.stringify(theme)}</p>
-        </div>
-    )
-}
+  return <div className="header">MARKDOWN EDITOR</div>;
+};
 
 export default Header;

@@ -1,5 +1,13 @@
-.markdown-container {
-display: grid;
-grid-template-columns: repeat(2,1fr);
+.markdown-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
+/* .markdown-input {
+  height: 100vh;
+} */
+
+.markdown-preview {
+  border: 1px solid red;
+  height: 100vh;
+}
