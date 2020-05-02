@@ -1,6 +1,12 @@
 .header {
-  color:brown;
+  color: brown;
   font-size: 40px;
   font-weight: 700;
   margin-right: 70px;
+}
+
+@media only screen and (max-width: 400px) {
+  .header {
+    margin-right: unset;
+  }
 }

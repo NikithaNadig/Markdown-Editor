@@ -1,21 +1,31 @@
-.markdown-theme-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    height: 100vh;
-    grid-gap: 40px;
-    margin: 0 30px;
+.markdown-theme-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+  grid-gap: 40px;
+  margin: 0 30px;
 }
 
 .markdown-textarea {
-    border: 1px solid black;
-    outline: none;
-    font-size: 16px;
-    padding: 16px;
-    border-radius: 16px;
+  border: 1px solid black;
+  outline: none;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 16px;
 }
 
 .preview-container {
-    border: 1px solid black;
-    padding: 16px;
-    border-radius: 16px;
+  border: 1px solid black;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+@media only screen and (max-width: 400px) {
+  .markdown-theme-container {
+    grid-gap: 20px;
+    margin: 0 10px;
+  }
+  .preview-container {
+    padding: 5px;
+  }
 }
