@@ -1,9 +1,16 @@
-/* .App {
+.App {
   text-align: center;
-} */
+  background-color: antiquewhite;
+}
 
 .header-container {
-display: flex;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.button-container {
+  line-height: 50px;
 }
 
 .button {
@@ -11,16 +18,19 @@ display: flex;
   width: 25px;
   border-radius: 50%;
   display: inline-block;
+  margin-right: 10px;
+  outline: none;
+  cursor: pointer;
 }
 
 .button1 {
-  background-color:red;
+  background-color: red;
 }
 
 .button2 {
-  background-color:orange;
+  background-color: orange;
 }
 
 .button3 {
-  background-color:green;
+  background-color: green;
 }

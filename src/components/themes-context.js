@@ -20,6 +20,6 @@ export const themes = {
     }
 };
 
-const ThemeContext = React.createContext(themes.dark);
+const ThemeContext = React.createContext(themes.white);
 export default ThemeContext;
 

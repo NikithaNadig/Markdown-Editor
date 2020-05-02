@@ -5,18 +5,17 @@ import ThemeContext from "./themes-context";
 
 const Theme = () => {
   const theme = useContext(ThemeContext);
-  const [markdown, updateMarkdown] = useState("");
+  const [markdown, updateMarkdown] = useState('# Use Markdown to preview text on the RHS');
   const modifyMarkdown = event => updateMarkdown(event.target.value);
   return (
     <div className="markdown-theme-container">
       <textarea
-        className="markdown-input"
+        className="markdown-textarea"
         onChange={modifyMarkdown}
         value={markdown}
       />
 
-      <div style={theme}>
-        <p>{JSON.stringify(theme)}</p>
+      <div className="preview-container" style={theme}>
         <div className="markdown-container">
           <div
             className="markdown-preview"
